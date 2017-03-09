@@ -12,6 +12,7 @@
 		AAC348A31E7193F000CB75FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC348A11E7193F000CB75FE /* Main.storyboard */; };
 		AAC348A51E7193F000CB75FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAC348A41E7193F000CB75FE /* Assets.xcassets */; };
 		AAC348A81E7193F000CB75FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC348A61E7193F000CB75FE /* LaunchScreen.storyboard */; };
+		AAC348B11E71947400CB75FE /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC348B01E71947400CB75FE /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AAC348A41E7193F000CB75FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAC348A71E7193F000CB75FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAC348A91E7193F000CB75FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAC348B01E71947400CB75FE /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		AAC3489C1E7193F000CB75FE /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
-				AAC3489D1E7193F000CB75FE /* AppDelegate.swift */,
 				AAC3489F1E7193F000CB75FE /* ViewController.swift */,
+				AAC348B01E71947400CB75FE /* FaceView.swift */,
 				AAC348A11E7193F000CB75FE /* Main.storyboard */,
+				AAC348AF1E71940C00CB75FE /* supporting files */,
+			);
+			path = FaceIt;
+			sourceTree = "<group>";
+		};
+		AAC348AF1E71940C00CB75FE /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AAC3489D1E7193F000CB75FE /* AppDelegate.swift */,
 				AAC348A41E7193F000CB75FE /* Assets.xcassets */,
 				AAC348A61E7193F000CB75FE /* LaunchScreen.storyboard */,
 				AAC348A91E7193F000CB75FE /* Info.plist */,
 			);
-			path = FaceIt;
+			name = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +107,7 @@
 				TargetAttributes = {
 					AAC348991E7193F000CB75FE = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PV3L2ZG6L5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,6 +150,7 @@
 			files = (
 				AAC348A01E7193F000CB75FE /* ViewController.swift in Sources */,
 				AAC3489E1E7193F000CB75FE /* AppDelegate.swift in Sources */,
+				AAC348B11E71947400CB75FE /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +273,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PV3L2ZG6L5;
 				INFOPLIST_FILE = FaceIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FaceIt;
+				PRODUCT_BUNDLE_IDENTIFIER = fi.oporas.FaceIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,9 +286,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PV3L2ZG6L5;
 				INFOPLIST_FILE = FaceIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.FaceIt;
+				PRODUCT_BUNDLE_IDENTIFIER = fi.oporas.FaceIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
