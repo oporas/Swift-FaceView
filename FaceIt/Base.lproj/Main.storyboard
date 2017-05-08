@@ -35,8 +35,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qGQ-vi-gOP" customClass="FaceView" customModule="FaceIt" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="702.5" height="768"/>
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="768"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="eyesOpen" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="mouthCurvature">
@@ -52,8 +53,12 @@
                                         <color key="value" red="0.020498243475634559" green="1" blue="0.053545089132671531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="caO-nV-L2r" appends="YES" id="dM5-6O-yLB"/>
+                                </connections>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qGQ-vi-gOP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JEi-Q9-46Z"/>
                             <constraint firstItem="qGQ-vi-gOP" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="L07-eG-Z8F"/>
@@ -63,10 +68,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="Duy-W7-UNu"/>
                     <connections>
-                        <outlet property="faceView" destination="qGQ-vi-gOP" id="70w-xj-5LF"/>
+                        <outlet property="faceView" destination="qGQ-vi-gOP" id="L2m-2s-TJh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="caO-nV-L2r">
+                    <connections>
+                        <action selector="shakeHead:" destination="BYZ-38-t0r" id="wXu-Cv-kKc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="205.43478260869566"/>
         </scene>
