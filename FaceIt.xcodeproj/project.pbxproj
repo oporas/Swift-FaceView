@@ -16,6 +16,7 @@
 		AAC348A81E7193F000CB75FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAC348A61E7193F000CB75FE /* LaunchScreen.storyboard */; };
 		AAC348B11E71947400CB75FE /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC348B01E71947400CB75FE /* FaceView.swift */; };
 		AACE1D691E76A3BF00F299F6 /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACE1D681E76A3BF00F299F6 /* FacialExpression.swift */; };
+		AAE5C5231EC3258C0081EB5C /* ExpressionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5C5221EC3258C0081EB5C /* ExpressionEditorViewController.swift */; };
 		AAFB61431EC0AB3200B63ECC /* BlinkingFaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB61421EC0AB3200B63ECC /* BlinkingFaceViewController.swift */; };
 		AAFB61451EC0B96500B63ECC /* EyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFB61441EC0B96500B63ECC /* EyeView.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		AAC348A91E7193F000CB75FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC348B01E71947400CB75FE /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		AACE1D681E76A3BF00F299F6 /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
+		AAE5C5221EC3258C0081EB5C /* ExpressionEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressionEditorViewController.swift; sourceTree = "<group>"; };
 		AAFB61421EC0AB3200B63ECC /* BlinkingFaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkingFaceViewController.swift; sourceTree = "<group>"; };
 		AAFB61441EC0B96500B63ECC /* EyeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EyeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +68,8 @@
 		AAC3489C1E7193F000CB75FE /* FaceIt */ = {
 			isa = PBXGroup;
 			children = (
+				AAC348A11E7193F000CB75FE /* Main.storyboard */,
+				AAE5C5221EC3258C0081EB5C /* ExpressionEditorViewController.swift */,
 				AA22A1D51E76EE43003CBFA5 /* VCLLoggingViewController.swift */,
 				AA22A1D11E76D9D4003CBFA5 /* EmotionsViewController.swift */,
 				AAC3489F1E7193F000CB75FE /* FaceViewController.swift */,
@@ -73,7 +77,6 @@
 				AAC348B01E71947400CB75FE /* FaceView.swift */,
 				AAFB61441EC0B96500B63ECC /* EyeView.swift */,
 				AACE1D681E76A3BF00F299F6 /* FacialExpression.swift */,
-				AAC348A11E7193F000CB75FE /* Main.storyboard */,
 				AAC348AF1E71940C00CB75FE /* supporting files */,
 			);
 			path = FaceIt;
@@ -169,6 +172,7 @@
 				AA22A1D21E76D9D4003CBFA5 /* EmotionsViewController.swift in Sources */,
 				AAFB61431EC0AB3200B63ECC /* BlinkingFaceViewController.swift in Sources */,
 				AAC3489E1E7193F000CB75FE /* AppDelegate.swift in Sources */,
+				AAE5C5231EC3258C0081EB5C /* ExpressionEditorViewController.swift in Sources */,
 				AAFB61451EC0B96500B63ECC /* EyeView.swift in Sources */,
 				AAC348B11E71947400CB75FE /* FaceView.swift in Sources */,
 			);

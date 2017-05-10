@@ -87,7 +87,7 @@ class FaceViewController: VCLLoggingViewController {
         }
     }
     
-    private func updateUI()
+    func updateUI()
     {
         switch expression.eyes {
         case .open:
@@ -95,7 +95,8 @@ class FaceViewController: VCLLoggingViewController {
         case .closed:
             faceView?.eyesOpen = false
         case .squinting:
-            faceView?.eyesOpen = false
+//            faceView?.eyesOpen = false
+            break
         }
         faceView?.mouthCurvature = mouthCurvatures[expression.mouth] ?? 0.0
     }
